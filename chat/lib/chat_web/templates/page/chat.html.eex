@@ -1,0 +1,19 @@
+<div class="jumbotron">
+  <h1>Chat</h1>
+  <p class="lead">Here is the chat </p>
+  <a href="/"> Home </a>
+  <ul id="msg-list" class="row" style="text-align:left">
+    <li> Test </l1>
+  </ul>
+
+  <div class="row">
+    <div class="col-xs-3">
+      <input type="text" id="name" class="form-control" placeholder="Enter name..." autofocus>
+    </div>
+    <div class="col-xs-9">
+      <input type="text" id="message" class="form-control" placeholder="Enter message...">
+
+    </div>
+  </div>
+
+</div>
