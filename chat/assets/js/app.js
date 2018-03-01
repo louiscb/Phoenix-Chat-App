@@ -21,7 +21,6 @@ import "phoenix_html"
 import socket from "./socket"
 
 var channel = socket.channel('room:lobby', {});
-var ul = document.getElementById('msg-list');
 
 channel.on('shout', function(payload) {
   var li = document.createElement('li');
@@ -34,6 +33,7 @@ channel.join();
 
 var name = document.getElementById('name');
 var msg = document.getElementById('message');
+var ul = document.getElementById('msg-list');
 
 msg.addEventListener('keypress', function (event) {
   if (event.keyCode == 13 && msg.value.length > 0) {
